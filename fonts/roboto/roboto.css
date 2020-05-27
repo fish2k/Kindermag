@@ -1,0 +1,31 @@
+/* Roboto Light */
+@font-face {
+    font-family: "Roboto";
+    font-weight: 300;
+    src: url(Roboto-Light.ttf) format(truetype);
+    font-display: fallback;
+}
+
+/* Roboto Regular */
+@font-face {
+    font-family: "Roboto";
+    font-weight: normal;
+    src: url(Roboto-Regular.ttf) format(truetype);
+    font-display: fallback;
+}
+
+/* Roboto Medium */
+@font-face {
+    font-family: "Roboto";
+    font-weight: 500;
+    src: url(Roboto-Medium.ttf) format(truetype);
+    font-display: fallback;
+}
+
+/* Roboto Bold */
+@font-face {
+    font-family: "Roboto";
+    font-weight: bold;
+    src: url(Roboto-Bold.ttf) format(truetype);
+    font-display: fallback;
+}
