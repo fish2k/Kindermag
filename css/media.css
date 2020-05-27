@@ -504,7 +504,6 @@
 
     .header-cats-list {
         flex-direction: column;
-        flex-wrap: wrap;
         height: 100%;
     }
 
