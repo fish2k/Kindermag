@@ -4,22 +4,28 @@ $(document).ready(() => {
         body = $("body"),
         overlay = $(".overlay"),
         searchBtn = $(".header-search"),
-        burgerBtn = $(".header-burger");
+        burgerBtn = $(".header-burger"),
+        showFilter = $(".show-filter");
+
+    showFilter.on("click", function () {
+        body.removeClass("on-search on-menu");
+        body.toggleClass("on-filter");
+    })
 
     burgerBtn.on("click", function () {
-        body.removeClass("on-search");
+        body.removeClass("on-search on-filter");
         body.toggleClass("on-menu");
     })
 
     searchBtn.on("click", function () {
-        body.removeClass("on-menu");
+        body.removeClass("on-menu on-filter");
         body.toggleClass("on-search");
 
         $(".header-main-search-input").focus();
     })
     
     overlay.on("click", function () {
-        body.removeClass("on-menu on-search");
+        body.removeClass("on-menu on-search on-filter");
     })
 
     sliderHome = new Swiper(".slider-home-init", {
