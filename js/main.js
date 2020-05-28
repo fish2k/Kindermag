@@ -41,6 +41,9 @@ $(document).ready(() => {
         autoplay: {
             delay: 3000
         },
+
+        // watchSlidesProgress: true,
+        // watchSlidesVisibility: true,
         
         on: {
             init: function () {
