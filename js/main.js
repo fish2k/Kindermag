@@ -30,8 +30,6 @@ $(document).ready(() => {
         var th = $(this),
             goText = th.find("span").data("go");
 
-        console.log(goText)
-
         $(this).addClass("clicked");
         $(this).find("span").text(goText); // поiхали
 

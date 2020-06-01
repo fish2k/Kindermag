@@ -1100,11 +1100,10 @@ body {
 }
 
 .form-common-style {
+    display: block;
     padding: 15px 28px 12px;
     border: 3px solid #e8e8e8;
     border-radius: 30px;
-
-    margin-bottom: 30px;
 
     width: 100%;
 
@@ -1117,6 +1116,10 @@ body {
     transition: ease all 100ms;
 }
 
+.col-form-common {
+    margin-bottom: 30px;
+}
+
 textarea.form-common-style {
     height: 120px;
     margin-bottom: 0;
@@ -1127,7 +1130,7 @@ textarea.form-common-style {
 }
 
 .form-footer {
-    margin-top: 23px;
+    /* margin-top: 23px; */
 
     display: flex;
     flex-wrap: wrap;
@@ -1146,7 +1149,8 @@ textarea.form-common-style {
 }
 
 .form-common-agree a:hover {
-    color: inherit
+    color: inherit;
+    text-decoration: none;
 }
 
 .footer {
@@ -1209,6 +1213,10 @@ textarea.form-common-style {
 .footer-list-link {
     color: inherit;
     font-size: 18px;
+}
+
+.footer-list-link:hover {
+    color: inherit
 }
 
 .overlay {
@@ -1720,6 +1728,8 @@ textarea.form-common-style {
     bottom: 50px;
     right: 15px;
 
+    cursor: pointer;
+
     transition: all .15s ease-out;
 }
 
@@ -2087,6 +2097,7 @@ textarea.form-common-style {
 
 .detail-descs {
     margin-top: 100px;
+    margin-bottom: 140px;
 }
 
 .detail-descs-content {
@@ -2129,4 +2140,102 @@ textarea.form-common-style {
 .detail-props-item:first-child {
     padding-left: 19px;
     color: #676767;
+}
+
+.detail-review {
+    margin-top: 90px;
+}
+
+.detail-review .section-heading {
+    margin-bottom: 15px;
+}
+
+.detail-review p {
+    font-weight: normal;
+}
+
+.detail-review-leave {
+    display: table;
+    margin-top: 49px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.detail-review-list {
+    margin-top: 50px;
+}
+
+.detail-review-list .review-footer {
+    margin-top: 29px;
+}
+
+.review-reply {
+    margin-top: 15px;
+    margin-bottom: 3px;
+}
+
+.row-reviews-btns {
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-top: 30px;
+}
+
+.review-leave {
+    margin-top: 100px;
+}
+
+.col-review-rate,
+.col-review-label {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.col-review-rate {
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+
+.col-review-label {
+    flex: 0 0 37.5%;
+    max-width: 37.5%;
+}
+
+.col-review-rate > span {
+    font-size: 15px;
+    line-height: 1;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.review-leave .form-footer {
+    margin-top: 0;
+}
+
+.leave-rate {
+    display: flex;
+    justify-content: space-between;
+    max-width: 190px;
+}
+
+.leave-rate-item {
+    flex: 0 0 30px;
+    max-width: 30px;
+    height: 30px;
+
+    background-image: url(../images/leave-rate.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    filter: grayscale(100%);
+
+    cursor: pointer;
+}
+
+.leave-rate-item.selected {
+    filter: grayscale(0%)
+}
+
+.consult-detail {
+    padding-top: 151px;
 }

@@ -560,6 +560,15 @@
 }
 
 @media (max-width: 767px) {
+    .col-form-common,
+    .form-common-agree {
+        margin-bottom: 15px;
+    }
+
+    .form-footer {
+        margin-top: 0;
+    }
+
     .section-seo p {
         font-size: 15px;
     }
