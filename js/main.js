@@ -119,7 +119,8 @@ $(document).ready(() => {
 
         breakpoints: {
             0: {
-                direction: "horizontal"
+                direction: "horizontal",
+                spaceBetween: 15
             },
             481: {
                 direction: "vertical",

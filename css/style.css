@@ -1898,6 +1898,8 @@ textarea.form-common-style {
 
     padding-left: 15px;
     padding-right: 15px;
+
+    position: relative;
 }
 
 .detail-section {
@@ -2010,8 +2012,6 @@ textarea.form-common-style {
 }
 
 .detail-tocart {
-    padding: 0;
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -2116,6 +2116,18 @@ textarea.form-common-style {
 .detail-descs-list li {
     padding-left: 17px;
     margin-bottom: 6px;
+    position: relative;
+}
+
+.detail-descs-list li::before {
+    position: absolute;
+    content: '';
+    top: 11px;
+    left: 0;
+    width: 10px;
+    height: 1px;
+
+    background-color: var(--dark);
 }
 
 .detail-props-list {
