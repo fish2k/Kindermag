@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Киндермаг &mdash; магазин детских товаров</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="fonts/roboto/roboto.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/cart.css">
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+</head>
+<body>
+    
+    <div class="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="header-row">
+                    <div class="header-location">
+                        <a href="javascript:void(0)" class="header-link header-location-city">Альметьевск</a>
+                        <a href="tel:88005513275" class="header-link header-location-number">8 800 551-32-75</a>
+                    </div>
+
+                    <ul class="header-top-nav">
+                        <li class="header-top-item">
+                            <a href="javascript:void(0)" class="header-top-link">О магазине</a>
+                        </li>
+                        <li class="header-top-item">
+                            <a href="javascript:void(0)" class="header-top-link">Доставка и оплата</a>
+                        </li>
+                        <li class="header-top-item">
+                            <a href="javascript:void(0)" class="header-top-link">Акции</a>
+                        </li>
+                        <li class="header-top-item">
+                            <a href="javascript:void(0)" class="header-top-link">Отзывы</a>
+                        </li>
+                        <li class="header-top-item">
+                            <a href="javascript:void(0)" class="header-top-link">Вопросы и ответы</a>
+                        </li>
+                        <li class="header-top-item">
+                            <a href="javascript:void(0)" class="header-top-link">Фотогалерея</a>
+                        </li>
+                        <li class="header-top-item">
+                            <a href="javascript:void(0)" class="header-top-link">Новости</a>
+                        </li>
+                        <li class="header-top-item">
+                            <a href="javascript:void(0)" class="header-top-link">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-main">
+            <div class="container">
+                <div class="row row-header-main">
+                    <div class="col-md-4 col-header-logo">
+                        <div class="header-main-left">
+                            <a href="/" class="header-main-logo">
+                                <img src="images/logo.png" alt="Киндермаг &mdash; магазин детских товаров">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-header-search">
+                        <div class="header-main-middle">
+                            <form class="header-main-search">
+                                <input type="text" class="header-main-search-input" placeholder="Поиск">
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-header-cart">
+                        <div class="header-main-right">
+                            <div class="header-socials">
+                                <a href="javascript:void(0)" class="header-socials-link">
+                                    <img src="images/header-socials/ig.svg" class="header-socials-icon" alt="Мы в instagram">
+                                </a>
+                                <a href="javascript:void(0)" class="header-socials-link">
+                                    <img src="images/header-socials/vk.svg" class="header-socials-icon" alt="Мы в VK">
+                                </a>
+                                <a href="javascript:void(0)" class="header-socials-link">
+                                    <img src="images/header-socials/wtf.svg" class="header-socials-icon" alt="Мы где-то ещё">
+                                </a>
+                                <a href="javascript:void(0)" class="header-socials-link">
+                                    <img src="images/header-socials/yt.svg" class="header-socials-icon" alt="Мы в youtube">
+                                </a>
+                            </div>
+
+                            <div class="responsive-item header-search">
+                                <img class="header-search-icon" src="images/search-red.svg" alt="Поиск">
+                            </div>
+
+                            <div class="responsive-item header-cart cart-has-items">
+                                <a class="header-cart-inner" href="javascript:void(0)">
+                                    <div class="header-cart-icon">
+                                        <img src="images/cart-red.svg" alt="">
+                                        <div class="cart-items">29</div>
+                                    </div>
+
+                                    <div class="header-cart-body">
+                                        <div class="header-cart-total">15 890 <span>₽</span></div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="responsive-item header-burger">
+                                <span class="burger-line line-1"></span>
+                                <span class="burger-line line-2"></span>
+                                <span class="burger-line line-3"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-cats">
+            <div class="container">
+                <div class="header-cats-inner">
+                    <ul class="header-cats-list">
+                        <li class="header-cats-item">
+                            <a href="javascript:void(0)" class="header-cats-link">Игрушки</a>
+                        </li>
+                        <li class="header-cats-item">
+                            <a href="javascript:void(0)" class="header-cats-link">Настольные игры</a>
+                        </li>
+                        <li class="header-cats-item">
+                            <a href="javascript:void(0)" class="header-cats-link">Творчество</a>
+                        </li>
+                        <li class="header-cats-item">
+                            <a href="javascript:void(0)" class="header-cats-link">Для малышей</a>
+                        </li>
+                        <li class="header-cats-item">
+                            <a href="javascript:void(0)" class="header-cats-link">Транспорт</a>
+                        </li>
+                        <li class="header-cats-item">
+                            <a href="javascript:void(0)" class="header-cats-link">Спорт</a>
+                        </li>
+                        <li class="header-cats-item">
+                            <a href="javascript:void(0)" class="header-cats-link">Электроника</a>
+                        </li>
+                        <li class="header-cats-item">
+                            <a href="javascript:void(0)" class="header-cats-link">Книги</a>
+                        </li>
+                        <li class="header-cats-item">
+                            <a href="javascript:void(0)" class="header-cats-link">Праздник</a>
+                        </li>
+                        <li class="header-cats-item">
+                            <a href="javascript:void(0)" class="header-cats-link">Сладости</a>
+                        </li>
+                        <li class="header-cats-item">
+                            <a href="javascript:void(0)" class="header-cats-link">Аксессуары</a>
+                        </li>
+                    </ul>
+
+                    <div class="header-cats-more">
+                        <img src="images/header-more.svg" alt="Ещё" class="header-cats-more-img">
+                        <span>Ещё</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="page-content">
+        <div class="container">
+            <ul class="page-bc">
+                <li class="page-bc-item"><a href="javascript:void(0)" class="page-bc-link">Главная</a></li>
+                <li class="page-bc-item"><a href="javascript:void(0)" class="page-bc-link">Корзина</a></li>
+            </ul>
+
+            <div class="section-heading">Корзина</div>
+        </div>
+    </div>
+
+    <div class="section-cart">
+        <div class="container container-cart">
+            <div class="row row-head">
+                <div class="col-5 col-cart-head">Наименование</div>
+                <div class="col-2 col-cart-head">Стоимость</div>
+                <div class="col-2 col-cart-head">Количество</div>
+                <div class="col-3 col-cart-head">Сумма</div>
+            </div>
+            <div class="incart-list">
+                <div class="row row-body">
+                    <div class="col-5 col-cart">
+                        <div class="col-cart-flex">
+                            <a href="javascript:void(0)" class="col-cart-product-image"></a>
+                            <a href="javascript:void(0)" class="col-cart-product-name">Магнитный конструктор Наша Игрушка (52 дет.)</a>
+                        </div>
+                    </div>
+                    <div class="col-2 col-cart">
+                        <div class="col-cart-flex">
+                            <div class="cart-price">
+                                <div class="oldprice">9 990<span>₽</span></div>
+                                <div class="newprice">5 990<span>₽</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2 col-cart">
+                        <div class="col-cart-flex">
+                            <div class="cart-counter component-counter">
+                                <div class="component-counter-item">-</div>
+                                <input class="component-counter-item component-counter-value" value="59">
+                                <div class="component-counter-item">+</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 col-cart">
+                        <div class="col-cart-flex">
+                            <div class="cart-price">
+                                <div class="oldprice">9 990<span>₽</span></div>
+                                <div class="newprice">5 990<span>₽</span></div>
+                            </div>
+                        </div>
+                        <div class="col-cart-product-remove">
+                            <img src="images/cart-remove.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="row row-body">
+                    <div class="col-5 col-cart">
+                        <div class="col-cart-flex">
+                            <a href="javascript:void(0)" class="col-cart-product-image"></a>
+                            <a href="javascript:void(0)" class="col-cart-product-name">Магнитный конструктор Наша Игрушка (52 дет.)</a>
+                        </div>
+                    </div>
+                    <div class="col-2 col-cart">
+                        <div class="col-cart-flex">
+                            <div class="cart-price">
+                                <div class="oldprice">9 990<span>₽</span></div>
+                                <div class="newprice">5 990<span>₽</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2 col-cart">
+                        <div class="col-cart-flex">
+                            <div class="cart-counter component-counter">
+                                <div class="component-counter-item">-</div>
+                                <input class="component-counter-item component-counter-value" value="59">
+                                <div class="component-counter-item">+</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 col-cart">
+                        <div class="col-cart-flex">
+                            <div class="cart-price">
+                                <div class="oldprice">9 990<span>₽</span></div>
+                                <div class="newprice">5 990<span>₽</span></div>
+                            </div>
+                        </div>
+                        <div class="col-cart-product-remove">
+                            <img src="images/cart-remove.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="row row-body">
+                    <div class="col-5 col-cart">
+                        <div class="col-cart-flex">
+                            <a href="javascript:void(0)" class="col-cart-product-image"></a>
+                            <a href="javascript:void(0)" class="col-cart-product-name">Магнитный конструктор Наша Игрушка (52 дет.)</a>
+                        </div>
+                    </div>
+                    <div class="col-2 col-cart">
+                        <div class="col-cart-flex">
+                            <div class="cart-price">
+                                <div class="oldprice">9 990<span>₽</span></div>
+                                <div class="newprice">5 990<span>₽</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2 col-cart">
+                        <div class="col-cart-flex">
+                            <div class="cart-counter component-counter">
+                                <div class="component-counter-item">-</div>
+                                <input class="component-counter-item component-counter-value" value="59">
+                                <div class="component-counter-item">+</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 col-cart">
+                        <div class="col-cart-flex">
+                            <div class="cart-price">
+                                <div class="oldprice">9 990<span>₽</span></div>
+                                <div class="newprice">5 990<span>₽</span></div>
+                            </div>
+                        </div>
+                        <div class="col-cart-product-remove">
+                            <img src="images/cart-remove.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row row-foot">
+                <div class="col-9 col-foot col-total">
+                    <div class="col-foot-inner col-promocode">
+                        <label class="promocode-label">
+                            <input type="text" class="promocode-input" placeholder="Введите промо-код">
+                            <div>?</div>
+                        </label>
+                        <span class="total-title">Итого:</span>
+                    </div>
+                </div>
+                <div class="col-3 col-foot col-foot-total">
+                    <div class="col-total-value col-foot-inner">
+                        15 590<span>₽</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="page-actions">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 page-actions_block">
+                    <div class="page-actions_item">
+                        <div class="page-actions_title">Способ доставки</div>
+                        <div class="page-actions_body">
+                            <div id="shoporders-delivery_type">
+                                <label class="page-actions_label">
+                                    <input checked="" class="page-actions_select" value="1" type="radio" name="1">
+                                    <div class="page-actions_type">
+                                        <div class="page-actions_type-name">Самовывоз в городе Альметьевск<span>бесплатно из склада или магазина.</span></div>
+                                    </div>
+                                </label>
+                                <label class="page-actions_label">
+                                    <input class="page-actions_select" value="2" type="radio" name="1">
+                                    <div class="page-actions_type">
+                                        <div class="page-actions_type-name">Доставка по городу Альметьевск по указанному Вами адресу<span>оплачивается отдельно и обговаривается с менеджером после оформления заказа.</span></div>
+                                    </div>
+                                </label>
+                                <label class="page-actions_label">
+                                    <input class="page-actions_select" value="2" type="radio" name="1">
+                                    <div class="page-actions_type">
+                                        <div class="page-actions_type-name">Доставка до Вашего города транспортной компанией<span>оплачивается отдельно и обговаривается с менеджером после оформления заказа.</span></div>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 page-actions_block">
+                    <div class="page-actions_item">
+                        <div class="page-actions_title">Способ оплаты</div>
+                        <div class="page-actions_body">
+                            <div id="shoporders-pay_type">
+                                <label class="page-actions_label">
+                                    <input checked="" class="page-actions_select" value="2" type="radio" name="2">
+                                    <div class="page-actions_type">
+                                        <div class="page-actions_type-name">Онлайн оплата<span>VISA, Master Card, МИР.</span></div>
+                                    </div>
+                                </label>
+                                <label class="page-actions_label">
+                                    <input class="page-actions_select" value="2" type="radio" name="2">
+                                    <div class="page-actions_type">
+                                        <div class="page-actions_type-name">Оплата при самовывозе<span>в городе Альметьевск в магазине или на складе.</span></div>
+                                    </div>
+                                </label>
+                                <label class="page-actions_label">
+                                    <input class="page-actions_select" value="2" type="radio" name="2">
+                                    <div class="page-actions_type">
+                                        <div class="page-actions_type-name">Оплата по расчетному счёту<span>для юридических лиц – ООО, ИП.</span></div>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="page-order">
+        <div class="container">
+            <div class="page-order_heading">
+                Оформление заказа
+            </div>
+        </div>
+        <div class="container">
+            <div class="page-order_form col-order">
+                <div class="page-order_label">
+                    <input type="text" id="shoporders-name" class="page-order_input" placeholder="ФИО*">
+                </div>
+                <div class="page-order_label">
+                    <input type="text" id="shoporders-tel" class="page-order_input" placeholder="Телефон*">
+                </div>
+                <div class="page-order_label">
+                    <input type="text" id="shoporders-email" class="page-order_input" placeholder="Электронная почта*">
+                </div>
+                <div class="page-order_label adres-order-input">
+                    <input type="text" id="shoporders-adres" class="page-order_input" placeholder="Адрес доставки">
+                </div>
+                <div class="page-order_label">
+                    <textarea id="shoporders-comment" class="page-order_input" rows="2" placeholder="Комментарий к заказу"></textarea>
+                </div>
+                <div class="page-order_bottom">
+                    <button type="submit" class="page-order_button button-default">Оформить заказ</button>
+                    <label class="page-order_agree">
+                        <input type="checkbox" name="accept" class="page-order_agree-input" checked="">
+                        <span>Я согласен(-на) на обработку моих <a href="javascript:void(0)">персональных данных.</a></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <a href="/" class="footer-logo">
+                    <img src="images/footer-logo.png" alt="Киндермаг - магазин детских товаров">
+                </a>
+                <div class="row row-footer">
+                    <div class="col-md-4">
+                        <div class="footer-content">
+                            Альметьевск, проспект Строителей, 37а <br>
+                            ТЦ «Алдина», 2 этаж
+    
+                            <div class="footer-contacts">
+                                <a href="tel:88005513275">8 800 551 32-75</a>
+                            </div>
+    
+                            2014-2020, kindermag.ru
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <ul class="footer-list">
+                            <li class="footer-list-item">
+                                <a href="javascript:void(0)" class="footer-list-link">О магазине</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <a href="javascript:void(0)" class="footer-list-link">Гарантия</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <a href="javascript:void(0)" class="footer-list-link">Доставка и оплата</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <a href="javascript:void(0)" class="footer-list-link">Контакты</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2">
+                        <ul class="footer-list">
+                            <li class="footer-list-item">
+                                <a href="javascript:void(0)" class="footer-list-link">Акции</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <a href="javascript:void(0)" class="footer-list-link">Новости</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <a href="javascript:void(0)" class="footer-list-link">Отзывы</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <a href="javascript:void(0)" class="footer-list-link">Фотогалерея</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <ul class="footer-list">
+                            <li class="footer-list-item">
+                                <a href="javascript:void(0)" class="footer-list-link">Вопросы и ответы</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <a href="javascript:void(0)" class="footer-list-link">Обмен и возврат</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <a href="javascript:void(0)" class="footer-list-link">Политика конфиденциальности</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <a href="javascript:void(0)" class="footer-list-link">Юридическая информация</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer-payments">
+                    <img src="images/payments.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="overlay"></div>
+    <div class="go-top">
+        <span data-go="поiхали">наверх</span>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
