@@ -169,6 +169,21 @@
 }
 
 @media (max-width: 1200px) {
+    .leave-review-form .leave-rate-item {
+        flex: 0 0 20px;
+        max-width: 20px;
+        height: 20px;
+        background-size: contain;
+    }
+
+    .leave-review-form .col-review-rate {
+        padding-top: 15px;
+    }
+
+    br {
+        display: none;
+    }
+
     .row-catalog-list .product-item {
         flex: 0 0 50%;
         max-width: 50%;
@@ -330,14 +345,35 @@
 
 @media (max-width: 991px) {
     /* overlay masks */
-    [class*=on-] {
+    [class*=state-] {
         overflow: hidden;
     }
 
-    [class*=on-] .overlay {
+    [class*=state-] .overlay {
         display: block;
     }
     /* overlay masks */
+
+    .leave-review-form .col-review-rate {
+        padding-top: 0;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .leave-review-form .leave-rate-item {
+        flex: 0 0 30px;
+        max-width: 30px;
+        height: 30px;
+    }
+
+    .leave-review-form .col-review-label {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .section-reviews {
+        margin-bottom: 50px;
+    }
 
     .detail-tocart {
         background-position-x: 30px;
@@ -403,7 +439,7 @@
         transition: left 300ms ease-in-out;
     }
 
-    .on-filter .catalog-filter {
+    .state-filter .catalog-filter {
         left: 0;
     }
 
@@ -636,6 +672,70 @@
 }
 
 @media (max-width: 767px) {
+    .section-seo {
+        margin-top: 50px;
+    }
+
+    .section-stocks-catalog .section-heading {
+        margin-bottom: 15px;
+    }
+
+    .stocks-events-desc {
+        font-size: 14px;
+    }
+
+    .leave-review-form {
+        margin-top: 30px;
+    }
+
+    .detail-review-list {
+        margin-bottom: 15px;
+    }
+
+    .reviews-faq-for {
+        font-size: 15px;
+        line-height: 1.2;
+    }
+
+    .col-stick {
+        order: 0;
+    }
+    
+    .col-reviews {
+        order: 1;
+    }
+
+    .news-list-content {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .news-list-content-desc {
+        font-size: 14px;
+    }
+
+    .news-detail-content {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .news-detail-text {
+        font-size: 14px;
+    }
+
+    .news-detail-col {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .news-detail-col-photo {
+        padding-right: 0;
+    }
+
+    .col-news-list-item {
+        margin-bottom: 30px;
+    }
+
     .product-body:hover {
         padding-bottom: 20px;
     }
@@ -645,8 +745,20 @@
     }
 
     .section-history {
-        margin-top: 20px;
+        margin-top: 40px;
         margin-bottom: 20px;
+    }
+
+    .row-catalog-list .product-item:last-child {
+        margin-bottom: 0;
+    }
+
+    .section-heading {
+        margin-bottom: 15px;
+    }
+
+    .row-history {
+        margin-top: 20px;
     }
 
     .page-bc {
@@ -767,7 +879,8 @@
     }
 
     .section-subheading {
-        margin-top: -25px;
+        margin-top: 0;
+        font-size: 14px;
     }
     
     .section-image-bg {
@@ -867,7 +980,7 @@
         transition: ease all 300ms;
     }
 
-    .on-menu .header-cats {
+    .state-menu .header-cats {
         left: 0;
         opacity: 1;
     }
@@ -925,7 +1038,7 @@
         z-index: 0;
     }
 
-    .on-search .col-header-search {
+    .state-search .col-header-search {
         display: block;
     }
 
@@ -992,7 +1105,7 @@
         transform-origin: 10px 10px;
     }
 
-    .on-search .header-search-icon {
+    .state-search .header-search-icon {
         transform: rotate(45deg);
     }
 
@@ -1052,6 +1165,27 @@
 }
 
 @media (max-width: 480px) {
+    .col-stick {
+        padding-top: 0;
+    }
+
+    .reviews-faq-for {
+        font-size: 14px;
+    }
+
+    .review-stats-head,
+    .review-stats-body {
+        padding: 20px 15px;
+    }
+
+    .review-stats-inner {
+        font-size: 14px;
+    }
+
+    .rate-stats-info {
+        font-size: 14px;
+    }
+
     .reviews-faq-text {
         font-size: 14px;
     }
@@ -1321,7 +1455,7 @@
     }
 
     .top-cats-item {
-        padding-bottom: 40%;
+        padding-bottom: 45%;
         background-size: 30%;
         background-position-y: calc(100% - 15px);
 

@@ -313,17 +313,17 @@ body {
     top: 21px;
 }
 
-.on-menu .line-1 {
+.state-menu .line-1 {
     top: 45%;
     transform: rotate(135deg)
 }
 
-.on-menu .line-2 {
+.state-menu .line-2 {
     left: 50%;
     right: 50%;
 }
 
-.on-menu .line-3 {
+.state-menu .line-3 {
     top: 45%;
     transform: rotate(-135deg)
 }
@@ -884,6 +884,7 @@ body {
 }
 
 .stocks-events-photo {
+    border-radius: 30px;
     padding-bottom: 34.8%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -2175,6 +2176,7 @@ textarea.form-common-style {
 
 .detail-review-list {
     margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .detail-review-list .review-footer {
@@ -2250,4 +2252,205 @@ textarea.form-common-style {
 
 .consult-detail {
     padding-top: 151px;
+}
+
+.section-news {
+    margin-top: 38px;
+}
+
+.news-list-body {
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+    overflow: hidden;
+
+    background-color: #f4f4f4;
+
+    text-decoration: none;
+    color: inherit;
+}
+
+.news-list-body:hover {
+    text-decoration: none;
+    color: inherit
+}
+
+.news-list-photo {
+    padding-bottom: 72.5%;
+
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    border-radius: 30px;
+}
+
+.news-list-content {
+    padding: 23px 30px 28px;
+}
+
+.news-list-content-name {
+    font-size: 20px;
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+
+.news-list-content-desc {
+    font-size: 16px;
+    font-weight: 300;
+
+    line-height: 1.2
+}
+
+.consult-news {
+    padding-top: 232px;
+}
+
+.row-news-detail {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+
+    border-radius: 30px;
+    background-color: #f4f4f4;
+}
+
+.news-detail-col {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.news-detail-col-photo {
+    padding-right: 15px;
+}
+
+.news-detail-col-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.news-detail-photo {
+    padding-bottom: 72.5%;
+    background-size: cover;
+    background-position: center center;
+
+    border-radius: 30px;
+}
+
+.news-detail-content {
+    padding: 48px 0px;
+
+    line-height: 1.25;
+}
+
+.news-detail-title {
+    font-size: 16px;
+    font-weight: normal;
+    margin-bottom: 25px;
+}
+
+.news-detail-text {
+    font-size: 16px;
+    font-weight: 300;
+
+    line-height: 1.2;
+}
+
+.section-reviews {
+    margin-top: -14px;
+    margin-bottom: 192px;
+}
+
+.reviews-faq-for {
+    margin-top: 15px;
+    margin-bottom: 47px;
+    color: #8e8e8e;
+}
+
+.reviews-faq-for-link {
+    font-weight: normal;
+    color: inherit;
+}
+
+.reviews-faq-for-link:hover {
+    color: inherit
+}
+
+.leave-review-form {
+    margin-top: 100px;
+}
+
+.col-stick {
+    position: relative;
+    padding-top: 35px;
+}
+
+.review-stats {
+    position: sticky;
+    left: 0;
+    top: 0;
+    padding-top: 15px;
+}
+
+.row-reviews-flex {
+    align-items: stretch;
+}
+
+.review-stats-inner {
+    border: 3px solid #f4f4f4;
+    border-radius: 30px;
+    overflow: hidden;
+
+    text-align: center;
+}
+
+.review-stats-head {
+    background-color: #f4f4f4;
+    padding: 25px;
+}
+
+.review-stats-body {
+    padding: 47px 25px;
+    font-weight: normal;
+    line-height: 1.2;
+}
+
+.review-stats-button {
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+
+.rate-stats-list {
+    display: flex;
+    justify-content: center;
+}
+
+.rate-stats-item {
+    flex: 0 0 30px;
+    max-width: 30px;
+
+    margin-right: 10px;
+
+    height: 30px;
+
+    background-image: url(../images/rate-star.svg);
+    background-size: contain;
+
+    filter: grayscale(100%)
+}
+
+.rate-stats-item:last-child {
+    margin-right: 0;
+}
+
+.rate-stats-item.active {
+    filter: grayscale(0%)
+}
+
+.rate-stats-info {
+    font-size: 16px;
+    font-weight: 300;
+    margin-top: 17px;
 }

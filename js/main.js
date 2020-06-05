@@ -40,27 +40,27 @@ $(document).ready(() => {
 
     // ФИЛЬТР
     showFilter.on("click", function () {
-        body.removeClass("on-search on-menu");
-        body.toggleClass("on-filter");
+        body.removeClass("state-search state-menu");
+        body.toggleClass("state-filter");
     });
 
     // МЕНЮ
     burgerBtn.on("click", function () {
-        body.removeClass("on-search on-filter");
-        body.toggleClass("on-menu");
+        body.removeClass("state-search state-filter");
+        body.toggleClass("state-menu");
     });
 
     // ПОИСК
     searchBtn.on("click", function () {
-        body.removeClass("on-menu on-filter");
-        body.toggleClass("on-search");
+        body.removeClass("state-menu state-filter");
+        body.toggleClass("state-search");
 
         $(".header-main-search-input").focus();
     });
     
     // общий оверлэй
     overlay.on("click", function () {
-        body.removeClass("on-menu on-search on-filter");
+        body.removeClass("state-menu state-search state-filter");
     });
 
     // если блок со слайдером имеется в DOM - СТАРТУЕМ!
