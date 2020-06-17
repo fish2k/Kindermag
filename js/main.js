@@ -63,6 +63,14 @@ $(document).ready(() => {
         body.removeClass("state-menu state-search state-filter");
     });
 
+    $(".reviews-faq-item").on("click", function () {
+        $(".reviews-faq-item").removeClass("faq-active");
+        $(this).toggleClass("faq-active");
+
+        $(".reviews-faq-item").find(".faq-ask").stop().slideUp();
+        $(this).find(".faq-ask").stop().slideDown();
+    })
+
     // если блок со слайдером имеется в DOM - СТАРТУЕМ!
     if (document.querySelector(".slider-home-init")) {
         sliderHome = new Swiper(".slider-home-init", {
@@ -92,30 +100,12 @@ $(document).ready(() => {
                 }
             }
         });
-    } else {
-        // не нашли слайдер, сообщаем
-        console.log("slider doesn't exist")
     }
-
-    var detailSlider = new Swiper(".detail-slider", {
-        slidesPerView: 1,
-        loop: true,
-        height: "auto",
-
-        navigation: {
-            prevEl: ".detail-prev",
-            nextEl: ".detail-next"
-        },
-
-        loopedSlides: 4
-    });
 
     var detailThumbsSlider = new Swiper(".detail-slider-thumbs", {
         slidesPerView: 4,
-        loop: true,
-        slideToClickedSlide: true,
-        touchRatio: 0.2,
         spaceBetween: 30,
+        freeMode: true,
 
         breakpoints: {
             0: {
@@ -128,7 +118,19 @@ $(document).ready(() => {
         }
     });
 
-    detailSlider.controller.control = detailThumbsSlider;
-    detailThumbsSlider.controller.control = detailSlider;
+    var detailSlider = new Swiper(".detail-slider", {
+        slidesPerView: 1,
+        //loop: true,
+        height: "auto",
 
+        navigation: {
+            prevEl: ".detail-prev",
+            nextEl: ".detail-next"
+        },
+
+        thumbs: {
+            swiper: detailThumbsSlider
+        }
+
+    });
 });
