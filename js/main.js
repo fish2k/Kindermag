@@ -9,6 +9,37 @@ $(document).ready(() => {
         showFilter = $(".show-filter"),
         toTop      = $(".go-top");
 
+    var main_menu_width = $('.header-cats-list').innerWidth();
+    var avialable_menu_width = main_menu_width - 150;
+    var items_width = 0;
+    
+    $(".header-cats-item").each(function () {
+        var item_width = $(this).innerWidth();
+        items_width += item_width;
+
+        if (items_width >= avialable_menu_width) {
+            $(this).addClass('sub');
+        }
+    });
+
+    var sub_li = $('.header-cats-item.sub');
+    $('.header-cats-item.sub').remove();
+
+    //$('.header-cats-inner').append('<div class="header-cats-more"><img src="images/header-more.svg" alt="Ещё" class="header-cats-more-img"><span>Ещё</span><ul class="header-cats-more-list"></ul></div>');
+    
+    sub_li.each(function () {
+        var item = $(this).clone();
+        $('.header-cats-more-list').append(item);
+
+        if (wnd.innerWidth() <= 767) {
+            var clonedItems = $('.header-cats-more-list').children(),
+                clonedItemsClone = clonedItems.clone();
+
+            $('.header-cats-list').append(clonedItemsClone);
+            clonedItems.remove();
+        }
+    });
+
     // кнопка "НАВЕРХ"
     wnd.scroll(function () {
         var offset = $(this).scrollTop();
@@ -69,7 +100,9 @@ $(document).ready(() => {
 
         $(".reviews-faq-item").find(".faq-ask").stop().slideUp();
         $(this).find(".faq-ask").stop().slideDown();
-    })
+    });
+
+
 
     // если блок со слайдером имеется в DOM - СТАРТУЕМ!
     if (document.querySelector(".slider-home-init")) {

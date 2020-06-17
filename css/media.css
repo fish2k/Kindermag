@@ -64,14 +64,13 @@
         max-width: 100%;
     }
 
-    .header-cats-link,
     .header-cats-more {
         font-size: 15px;
     }
 
-    .header-cats-item:not(:last-child) {
+    /* .header-cats-item:not(:last-child) {
         margin-right: 17px;
-    }
+    } */
 
     .slider-home-body {
         right: 0;
@@ -247,7 +246,6 @@
         display: none;
     }
 
-    .header-cats-link,
     .header-cats-more {
         font-size: 13px;
     }
@@ -256,9 +254,9 @@
         padding-left: 10px;
     }
 
-    .header-cats-item:not(:last-child) {
+    /* .header-cats-item:not(:last-child) {
         margin-right: 10px;
-    }
+    } */
 
     .header-top-nav {
         display: none;
@@ -560,7 +558,7 @@
     }
 
     .slider-home-title {
-        font-size: 30px;
+        font-size: 26px;
     }
 
     .slider-home-desc {
@@ -579,12 +577,12 @@
         border-radius: 0;
     }
 
-    .header-cats-item:not(:last-child) {
+    /* .header-cats-item:not(:last-child) {
         margin-right: 13px;
-    }
+    } */
 
     .header-cats-link {
-        font-size: 11px;
+        /* font-size: 11px; */
         padding-top: 13px;
         padding-bottom: 13px;
     }
@@ -593,9 +591,9 @@
         padding-right: 0;
     }
     
-    .header-cats-more {
+    /* .header-cats-more {
         display: none;
-    }
+    } */
 
     .header-socials {
         display: none;
@@ -672,6 +670,10 @@
 }
 
 @media (max-width: 767px) {
+    .header-cats-more {
+        display: none;
+    }
+
     .section-seo {
         margin-top: 50px;
     }
@@ -860,7 +862,7 @@
     }
 
     .header-cats-link {
-        font-size: 16px;
+        /* font-size: 16px; */
         font-weight: bold;
         padding-top: 10px;
         padding-bottom: 10px;
@@ -986,6 +988,9 @@
         left: -270px;
         width: 270px;
         opacity: 0;
+
+        overflow-y: auto;
+        background-color: var(--accent);
 
         transition: ease all 300ms;
     }
@@ -1187,6 +1192,11 @@
 }
 
 @media (max-width: 480px) {
+    .stock-button {
+        font-size: 15px;
+        display: block;
+    }
+
     .product-prices .oldprice {
         display: none;
     }

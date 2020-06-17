@@ -151,7 +151,6 @@ body {
     display: flex;
     justify-content: space-between;
     border-radius: 15px;
-    overflow: hidden;
 
     font-weight: normal;
     font-size: 18px;
@@ -162,7 +161,7 @@ body {
 .header-cats-list {
     display: flex;
     margin: 0;
-    padding: 0 117px 0 26px;
+    padding: 0 117px 0 13px;
     list-style-type: none;
     flex: 0 0 100%;
     max-width: 100%;
@@ -172,13 +171,14 @@ body {
     color: #fff;
 }
 
-.header-cats-item:not(:last-child) {
+/* .header-cats-item:not(:last-child) {
     margin-right: 27px;
-}
+} */
 
 .header-cats-link {
     display: flex;
-    padding: 16px 0 17px;
+    padding: 16px 13px 17px;
+    white-space: nowrap;
 
     color: inherit;
 }
@@ -204,6 +204,26 @@ body {
     border-radius: 15px;
 
     cursor: pointer;
+}
+
+.header-cats-more-list {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 200px;
+
+    background-color: var(--accent);
+
+    z-index: 5;
+
+    margin: 0;
+    padding: 0 0 0 5px;
+
+    list-style-type: none;
+
+    border-radius: 15px;
+
+    font-size: 16px;
 }
 
 .header-cats-more-img {
@@ -863,6 +883,33 @@ body {
     border-radius: 30px;
 
     position: relative;
+}
+
+.stock-button {
+    display: table;
+    margin-top: 31px;
+
+    background-color: transparent;
+
+    border: 2px solid var(--accent);
+    text-align: center;
+
+    padding: 12px 28px;
+
+    font-size: 18px;
+    font-weight: normal;
+
+    color: var(--accent);
+
+    border-radius: 25px;
+
+    transition: all .3s ease;
+}
+
+.stock-button:hover {
+    color: #fff;
+    background-color: var(--accent);
+    text-decoration: none;
 }
 
 .shortstory {
@@ -2274,6 +2321,7 @@ textarea.form-common-style {
     flex-direction: column;
     border-radius: 30px;
     overflow: hidden;
+    height: 100%;
 
     background-color: #f4f4f4;
 
