@@ -40,6 +40,17 @@ $(document).ready(() => {
         }
     });
 
+    $(".header-cats-item").hover(
+        function () {
+            $(".header-cats-item").addClass("nothover");
+            $(this).addClass("hover");
+        },
+        function () {
+            $(".header-cats-item").removeClass("nothover");
+            $(this).removeClass("hover")
+        }
+    )
+
     // кнопка "НАВЕРХ"
     wnd.scroll(function () {
         var offset = $(this).scrollTop();
@@ -133,7 +144,33 @@ $(document).ready(() => {
                 }
             }
         });
+
+        $(".slider-home-init").hover(
+            function () {
+                sliderHome.autoplay.stop()
+            },
+            function () {
+                sliderHome.autoplay.start()
+            }
+        )
     }
+
+    var shopSlider = new Swiper(".shop-slider", {
+        slidesPerView: 1,
+
+        autoplay: {
+            delay: 3000
+        }
+    });
+
+    $(".shop-slider").hover(
+        function () {
+            shopSlider.autoplay.stop()
+        },
+        function () {
+            shopSlider.autoplay.start()
+        }
+    )
 
     var detailThumbsSlider = new Swiper(".detail-slider-thumbs", {
         slidesPerView: 4,
@@ -166,4 +203,8 @@ $(document).ready(() => {
         }
 
     });
+
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+    })
 });

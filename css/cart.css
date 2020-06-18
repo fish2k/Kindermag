@@ -190,7 +190,7 @@
     position: absolute;
     width: 24px;
     height: 24px;
-    line-height: 24px;
+    line-height: 25px;
     text-align: center;
 
     color: #fff;
@@ -215,6 +215,11 @@
     padding: 6px 15px 4px;
 
     background-color: transparent;
+}
+
+.promocode-input:focus,
+.promocode-input:hover {
+    border-color: var(--accent);
 }
 
 .col-total-value span {
@@ -364,6 +369,13 @@
     border-radius: 30px;
 
     resize: none;
+}
+
+.page-order_input:focus,
+.page-leavecomment_input:focus,
+.page-order_input:hover,
+.page-leavecomment_inpu:hover {
+    border-color: var(--accent);
 }
 
 textarea.page-order_input {

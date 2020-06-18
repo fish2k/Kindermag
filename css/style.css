@@ -93,7 +93,7 @@ body {
 
 .header-link {
     color: inherit;
-    font-weight: 300;
+    font-weight: normal;
 }
 
 .header-link:hover {
@@ -170,6 +170,15 @@ body {
 
 .header-cats-item {
     color: #fff;
+    transition: all .2s ease;
+}
+
+.header-cats-item.nothover {
+    opacity: 0.7;
+}
+
+.header-cats-item.hover {
+    opacity: 1;
 }
 
 /* .header-cats-item:not(:last-child) {
@@ -185,7 +194,8 @@ body {
 }
 
 .header-cats-link:hover {
-    color: inherit
+    color: inherit;
+    text-decoration: none;
 }
 
 .header-cats-more {
@@ -252,6 +262,11 @@ body {
     background-image: url(../images/search-red.svg);
     background-repeat: no-repeat;
     background-position: 18px 13px;
+}
+
+.header-main-search-input:focus,
+.header-main-search-input:hover {
+    border-color: var(--accent);
 }
 
 .header-main-search-input::placeholder {
@@ -378,6 +393,7 @@ body {
 
 .header-cart-total span {
     font-size: 80%;
+    font-weight: 500
 }
 
 .slider-home {
@@ -651,7 +667,7 @@ body {
 .product-body:hover {
     padding-bottom: 0;
 
-    box-shadow: 0 0 30px 0 rgba(0,0,0, .15);
+    box-shadow: 0px 0px 70px 0px rgba(0, 0, 0, 0.1);
     border-color: transparent;
     border-bottom-width: 0;
 
@@ -719,6 +735,10 @@ body {
 .oldprice > span,
 .newprice > span {
     font-size: 80%;
+}
+
+.oldprice > span {
+    font-size: 82%;
 }
 
 .component-prices {
@@ -1349,12 +1369,14 @@ textarea.form-common-style {
 .page-cats-block.hover,
 .page-cats-block:hover {
     background-color: #fff;
-    box-shadow: 0 0 30px 0 rgba(0,0,0, .15);
+    /* box-shadow: 0 0 30px 0 rgba(0,0,0, .15); */
+    box-shadow: 0px 0px 70px 0px rgba(0, 0, 0, 0.1);
 }
 
 .page-cats-block.hover .page-cats-li::before,
 .page-cats-block:hover .page-cats-li::before {
     filter: grayscale(0%);
+    opacity: 1;
 }
 
 .page-cats-block::before {
@@ -1401,7 +1423,8 @@ textarea.form-common-style {
     background-repeat: no-repeat;
     background-position: center center;
 
-    filter: grayscale(100%)
+    filter: grayscale(100%);
+    opacity: 0.3;
 }
 
 .page-cats-link {
@@ -1434,7 +1457,7 @@ textarea.form-common-style {
     display: table;
     color: #999999;
     font-size: 18px;
-    font-weight: normal;
+    font-weight: 300;
 
     padding: 28px 10px 0;
 
@@ -1505,7 +1528,8 @@ textarea.form-common-style {
 .category-item.selected,
 .category-item:hover {
     background-color: #fff;
-    box-shadow: 0 0 20px 0 rgba(0,0,0, .15);
+    /* box-shadow: 0 0 20px 0 rgba(0,0,0, .15); */
+    box-shadow: 0px 0px 70px 0px rgba(0, 0, 0, 0.1);
 }
 
 .category-item.selected::before,
@@ -1545,9 +1569,9 @@ textarea.form-common-style {
 }
 
 .catalog-item-filter {
-    position: sticky;
+    /* position: sticky;
     top: 15px;
-    left: 0;
+    left: 0; */
 }
 
 .catalog-content {
@@ -1565,7 +1589,7 @@ textarea.form-common-style {
 .irs--round .irs-handle.state_hover, .irs--round .irs-handle,
 .irs--round .irs-handle.state_hover, .irs--round .irs-handle:hover {
     background-color: var(--accent);
-    border-color: #fff;
+    border-color: #f4f4f4;
     border-width: 2px;
 
     cursor: pointer;
@@ -1591,6 +1615,7 @@ textarea.form-common-style {
 
 .irs--round .irs-line, .irs--round .irs-bar {
     height: 10px;
+    border-radius: 10px;
 }
 
 .row-catalog {
@@ -1702,7 +1727,8 @@ textarea.form-common-style {
 }
 
 .filter-list-more:hover {
-    color: var(--accent)
+    color: var(--accent);
+    text-decoration: none;
 }
 
 .row-catalog-list .product-item {
@@ -1988,14 +2014,17 @@ textarea.form-common-style {
     max-width: 100px;
 
     margin-right: 15px;
+    
 }
 
 .detail-rate-star {
     filter: grayscale(100%);
+    opacity: 0.4;
 }
 
 .rated {
-    filter: grayscale(0%)
+    filter: grayscale(0%);
+    opacity: 1;
 }
 
 .detail-info {
@@ -2061,6 +2090,7 @@ textarea.form-common-style {
 .detail-counter {
     flex: 0 0 147px;
     max-width: 147px;
+    border-color: #fff;
 }
 
 .detail-counter {
@@ -2099,6 +2129,12 @@ textarea.form-common-style {
 
 .detail-info-city,
 .detail-info-deli {
+    color: #8e8e8e;
+}
+
+.detail-info-city:hover,
+.detail-info-deli:hover {
+    text-decoration: none;
     color: #8e8e8e;
 }
 
@@ -2301,12 +2337,17 @@ textarea.form-common-style {
     background-position: center center;
 
     filter: grayscale(100%);
-
+    opacity: 0.4;
     cursor: pointer;
 }
 
 .leave-rate-item.selected {
-    filter: grayscale(0%)
+    filter: grayscale(0%);
+    opacity: 1;
+}
+
+.detail-rate-info {
+    font-weight: 300;
 }
 
 .consult-detail {
@@ -2498,7 +2539,8 @@ textarea.form-common-style {
     background-image: url(../images/rate-star.svg);
     background-size: contain;
 
-    filter: grayscale(100%)
+    filter: grayscale(100%);
+    opacity: 0.4;
 }
 
 .rate-stats-item:last-child {
@@ -2506,11 +2548,27 @@ textarea.form-common-style {
 }
 
 .rate-stats-item.active {
-    filter: grayscale(0%)
+    filter: grayscale(0%);
+    opacity: 1;
 }
 
 .rate-stats-info {
     font-size: 16px;
     font-weight: 300;
     margin-top: 17px;
+}
+
+.detail-review-list .reviews-faq-item {
+    margin-bottom: 31px;
+}
+
+.shop-slide {
+    padding-bottom: 62.4999999%;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.shop-slider {
+    border-radius: 30px;
 }
